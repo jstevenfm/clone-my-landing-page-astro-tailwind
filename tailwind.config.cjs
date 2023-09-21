@@ -26,7 +26,13 @@ module.exports = {
 						transform: 'translateY(60%)',
 						'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1) '},
         }
-      }
+      },
+      boxShadow: {
+        'green': '10px 10px 15px',
+      },
+			screens: {
+				'tablet': '744px',
+			}
 		},
 	},
 	plugins: [],

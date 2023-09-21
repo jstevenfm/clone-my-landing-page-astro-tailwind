@@ -1,20 +1,13 @@
 ---
-import AnchorsSections from './AnchorsSections.astro';
 interface Props {
   id: string;
   titleSection: string;
 }
 const { id, titleSection } = Astro.props;
 ---
-<section id={ id }>
-  <header> { titleSection } </header>
-  <article>
-    <AnchorsSections
-      href='/'
-      src='../../public/portfolio.webp'
-      alt='Imagen de mi landing page'
-      nameProject='My Landing Page'
-      descriptionProject='This page shows my projects'
-    />
+<section id={ id } class="pt-7 pb-10 px-9">
+  <header class="text-lg font-semibold mb-7 text-ctagreen"> { titleSection } </header>
+  <article class="w-full flex justify-center flex-wrap gap-9">
+    <slot />
   </article>
 </section>

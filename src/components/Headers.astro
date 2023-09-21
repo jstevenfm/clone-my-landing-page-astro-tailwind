@@ -2,7 +2,7 @@
 
 ---
 
-<header class="grid grid-cols-2 items-center p-4 bg-royalblue/80 rounded-xl sticky top-3 w-full max-w-[740px] mx-auto">
+<header class="flex justify-between items-center p-4 bg-royalblue/60 rounded-xl sticky top-3 w-full max-w-[740px] mx-auto">
   <a class="flex gap-3 items-center hover:scale-110 hover:translate-x-4 hover:text-ctagreen cursor-pointer transition-all ease-linear">
     <svg
       width="24"
@@ -21,15 +21,15 @@
   </a>
   
   <input type="checkbox" id="menu">
-  <label for="menu" class="w-8 h-6 cursor-pointer flex content-between flex-wrap transition-all ease-out duration-200 menu_button justify-self-end  z-50">
+  <label for="menu" class="w-8 h-6 cursor-pointer flex content-between flex-wrap transition-all ease-out duration-200 menu_button justify-self-end  z-50 tablet:hidden">
     <span></span>
     <span></span>
     <span></span>
   </label>
 
 
-  <nav class="bg-royalblue/80 px-7 py-9 fixed top-0 right-[-100vw] text-lg ease-linear transition-all duration-200 flex w-screen h-screen ">
-    <ul class=" mt-7 mx-auto flex flex-col gap-5">
+  <nav class="bg-royalblue/80 px-7 py-9 fixed top-0 right-[-100vw] text-lg ease-linear transition-all duration-200 flex w-screen h-screen tablet:bg-transparent tablet:right-auto tablet:p-0 tablet:w-auto tablet:h-full tablet:static">
+    <ul class=" mt-7 mx-auto flex flex-col gap-5 tablet:flex-row tablet:mt-0">
       <li class="hover:scale-110 hover:text-ctagreen hover:ease-linear transition-all">
         <a href="">Home</a>
       </li>
@@ -43,9 +43,7 @@
         <a href="">Contact</a>
       </li>
       <li class="hover:scale-110 hover:text-ctagreen hover:ease-linear transition-all">
-        <a href="">
-          About Me
-        </a>
+        <a href="">About</a>
       </li>
     </ul>
   </nav>
