@@ -9,7 +9,7 @@ interface Props {
 const { href, src, alt, nameProject, descriptionProject } = Astro.props;
 ---
 <a href={ href } target="_blank" class="">
-  <figure class="w-64 h-44 rounded-xl shadow-xl grid grid-rows-[minmax(100%,_1fr)] overflow-hidden section-item hover:transition-all hover:ease-linear hover:duration-200 hover:scale-110 hover:shadow-ctagreen/80 hover:shadow-green">
+  <figure class="w-64 h-44 rounded-xl shadow-xl grid grid-rows-[minmax(100%,_1fr)] overflow-hidden section-item lg:hover:transition-all lg:hover:ease-linear lg:hover:duration-200 lg:hover:scale-110 lg:hover:shadow-ctagreen/80 lg:hover:shadow-green">
     <img src={ src } alt={ alt } class="w-full h-full object-cover">
     <figcaption class="py-4 px-4 w-full h-44 relative bottom-0 bg-black/50 transition-all ease-linear duration-200">
       <h3 class="pb-2 font-bold text-ctagreen">
@@ -23,7 +23,7 @@ const { href, src, alt, nameProject, descriptionProject } = Astro.props;
   </figure>
 </a>
 
-<!-- Add Transition Hover in Figcaption -->
+<!-- Add Transition lg:hover in Figcaption -->
 <style>
   .section-item {
     grid-template-areas: "stack";
