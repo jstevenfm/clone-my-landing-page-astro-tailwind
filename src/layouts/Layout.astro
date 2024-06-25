@@ -17,6 +17,19 @@ const { title } = Astro.props;
     	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
 		<title>{title}</title>
+		<meta name="description" content="Desarrollador Web. Frontend, JavaScript, React, Astro, CSS">
+		<meta property="og:url" content="https://jstevenfm.github.io" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content="Desarrollador Web. Frontend, JavaScript, React, Astro, CSS">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="@jstevenfm">
+		<meta name="twitter:site" content="@jstevenfm">
+		<meta name="twitter:image" content="/favicon.svg">
+		<meta property="og:locale" content="es">
+		<meta property="og:image" content="/favicon.svg">
+		<meta name="twitter:title" content={title}>
+		<meta name="twitter:description" content="Desarrollador Web. Frontend, JavaScript, React, Astro, CSS">
 	</head>
 	<body>
 		<Header />
